@@ -1,2 +1,40 @@
-# bikecounter
-Count cyclists in the street
+**README**
+
+This application will run on a Raspberry Pi and if you set your camera on a street or bikepath will keep a count of cyclists. It needs
+
+- Raspberry Pi (4B recommended)
+- Python 3.10.13 (best installed using pyenv)
+- Camera
+- Battery pack
+
+Optional
+- USB drive
+- Solar panel
+
+
+## TRACKER
+
+Once you've installed a Python virtual environment, the bytetracks file that sets the parameters on the tracker can be found:
+
+<your_virtual_env>/lib/python3.10/site-packages/ultralytics/cfg/trackers/bytetrack.yaml
+
+We adjusted "track_high_thresh" to 0.5 and "new_track_thresh" to 0.6 which left the following parameters:
+
+tracker_type: bytetrack # tracker type, ['botsort', 'bytetrack']
+track_high_thresh: 0.5 # ** threshold for the first association
+track_low_thresh: 0.1 # threshold for the second association
+new_track_thresh: 0.6 # ** threshold for init new track if the detection does not match any tracks
+track_buffer: 30 # ** buffer to calculate the time when to remove tracks
+match_thresh: 0.8 # ** threshold for matching tracks
+fuse_score: True # Whether to fuse confidence scores with the iou distances before matching
+
+---
+
+## USB
+
+Saving to the Pi's external USB will require
+
+csv_filename = "bicycle_log.csv"
+usb_path = '/Volumes/data'
+os.makedirs(usb_path, exist_ok=True)
+csv_file_path = os.path.join(usb_path, csv_filename)
