@@ -1,4 +1,4 @@
-**README**
+**Cyclist counter**
 
 This application will run on a Raspberry Pi and if you set your camera on a street or bikepath will keep a count of cyclists. It needs
 
@@ -6,27 +6,23 @@ This application will run on a Raspberry Pi and if you set your camera on a stre
 - Python 3.10.13 (best installed using pyenv)
 - Camera
 - Battery pack
-
-Optional
 - USB drive
-- Solar panel
-
 
 ## TRACKER
 
-Once you've installed a Python virtual environment, the bytetracks file that sets the parameters on the tracker can be found:
+Once you've installed a Python virtual environment, the bytetracks file that sets the parameters on the tracker can be found (on a mac) at: 
 
 <your_virtual_env>/lib/python3.10/site-packages/ultralytics/cfg/trackers/bytetrack.yaml
 
 We adjusted "track_high_thresh" to 0.5 and "new_track_thresh" to 0.6 which left the following parameters:
 
-tracker_type: bytetrack # tracker type, ['botsort', 'bytetrack']
-track_high_thresh: 0.5 # ** threshold for the first association
-track_low_thresh: 0.1 # threshold for the second association
-new_track_thresh: 0.6 # ** threshold for init new track if the detection does not match any tracks
-track_buffer: 30 # ** buffer to calculate the time when to remove tracks
-match_thresh: 0.8 # ** threshold for matching tracks
-fuse_score: True # Whether to fuse confidence scores with the iou distances before matching
+tracker_type: bytetrack 
+track_high_thresh: 0.5 
+track_low_thresh: 0.1 
+new_track_thresh: 0.6 
+track_buffer: 30  
+match_thresh: 0.8  
+fuse_score: True  
 
 ---
 
