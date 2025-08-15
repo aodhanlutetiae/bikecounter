@@ -1,4 +1,4 @@
-**Cyclist counter**
+## CYCLIST COUNTER
 
 This application will run on a Raspberry Pi and if you set your camera on a street or bikepath will keep a count of cyclists. It needs
 
@@ -10,7 +10,7 @@ This application will run on a Raspberry Pi and if you set your camera on a stre
 
 ## TRACKER
 
-Once you've installed a Python virtual environment, the bytetracks file that sets the parameters on the tracker can be found (on a mac) at: 
+Once you've installed a Python virtual environment, the bytetracks file that is part of the Ultralytics library and that sets the parameters on the tracker can be found (on a mac) at: 
 
 <your_virtual_env>/lib/python3.10/site-packages/ultralytics/cfg/trackers/bytetrack.yaml
 
@@ -26,7 +26,7 @@ fuse_score: True
 
 ---
 
-## USB
+## USB
 
 Saving to the Pi's external USB will require
 
