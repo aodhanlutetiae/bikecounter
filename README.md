@@ -8,6 +8,18 @@ This application will run on a Raspberry Pi and if you set your camera on a stre
 - Battery pack
 - USB drive
 
+It's in an outer box
+
+![The outer box](pi_bikes_pics/box.jpg)
+
+with these insides
+
+![insides](pi_bikes_pics/insides.jpg)
+
+and this detail
+
+![detail](pi_bikes_pics/detail.jpg)
+
 ## TRACKER
 
 Once you've installed a Python virtual environment, the bytetracks file that is part of the Ultralytics library and that sets the parameters on the tracker can be found (on a mac) at: 
