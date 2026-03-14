@@ -1,6 +1,6 @@
 ## CYCLIST COUNTER
 
-This application will run on a Raspberry Pi and if you set your camera on a street or bikepath will keep a count of cyclists. It whole thing costs (2025) about £120 in parts:
+This application will run on a Raspberry Pi and, if you set your camera on a street or bikepath, will keep a count of cyclists. It costs (2025) about £120 in parts:
 
 - [Raspberry Pi 4b with 4GB RAM](https://thepihut.com/products/raspberry-pi-4-model-b), £52.50
 
@@ -16,22 +16,7 @@ This application will run on a Raspberry Pi and if you set your camera on a stre
 
 - Junction Box with hinged lid. 240mm x 190mm x 90mm Waterproof, £10.50
 
-
-
-It's in an outer box
-
-<p align="center">
-  <img src="pi_bikes_pics/box.jpg" width="600">
-</p>
-
-
-with these insides
-
-<p align="center">
-  <img src="pi_bikes_pics/insides.jpg" width="600">
-</p>
-
-and this detail
+It's made up of a large battery pack and a camera, both cabled to the Pi, with a removable USB drive for gathering the collected data.
 
 <p align="center">
   <img src="pi_bikes_pics/detail.jpg" width="600">

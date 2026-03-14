@@ -2,6 +2,9 @@
 .DS_Store
 yolov8n.pt
 video_files/
+old_counters_forbin/
+FINAL_PI_28092025_bicycle_counter.py
+bicycle_counter_vid.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
